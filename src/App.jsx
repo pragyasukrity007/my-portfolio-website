@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Contactme from "./pages/Contactme";
 import NavBar from "./components/shared/NavBar";
+import Footer from "./components/shared/Footer";
 
 function App() {
   const { theme } = useThemeContext();
@@ -24,7 +25,8 @@ function App() {
               <Route path="/contact" element={<Contactme />}></Route>
             </Routes>
           </div>
-        </main>
+          <Footer />
+        </main>  
       </BrowserRouter>
       <ToastContainer
         position="top-center"
