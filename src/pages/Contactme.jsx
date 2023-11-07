@@ -6,6 +6,7 @@ import {
   FiGithub,
 } from "react-icons/fi";
 
+
 function Contactme() {
   const contacts = [
     {
@@ -39,23 +40,28 @@ function Contactme() {
     <>
       <div
         tabIndex={0}
-        className="collapse collapse-plus border border-base-300 bg-base-200 mt-10 w-11/12 m-auto"
+        className="collapse collapse-plus border border-base-300 bg-base-200 shadow-xl w-11/12 m-auto mt-10"
       >
         <div className="collapse-title text-xl font-medium">
           Reach Me Directly
         </div>
         <div className="collapse-content">
-          Hey there, Thanks a bunch for stopping by my portfolio! Whether you
-          are checking out my projects or considering a collaboration, your
-          visit is appreciated. Feel free to shoot me a message if you have any
-          questions or if there is something specific you would like to chat
-          about. Looking forward to the possibility of connecting! Best, Pragya
-          Sukrity
+          <p>Hello there!</p>
+          <p>
+            Thank you for visiting my portfolio. If you have any questions,
+            opportunities, or just want to connect, feel free to reach out. I am
+            always eager to collaborate on exciting projects or discuss how my
+            skills in full-stack development can contribute to your team
+            {"'"}s success.
+          </p>
+          <p>Looking forward to hearing from you!</p>
+          <p>Best regards,</p>
+          <p>Pragya</p>
         </div>
       </div>
 
-      <div className="mt-10 mt-10px">
-        <div className="card bg-base-100 shadow-xl w-11/12 m-auto">
+      <div className="mt-10">
+        <div className="card bg-base-200 shadow-xl w-11/12 m-auto">
           <div className="card-body">
             <ul className="font-general-regular">
               {contacts.map((contact) => (

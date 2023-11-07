@@ -17,7 +17,10 @@ function App() {
           {/* <h1 className="text-4xl text-red-500 dark:text-black">{theme}</h1> */}
           {/* navbar comes here */}
 
-          <div className="bg-yellow-200 dark:bg-gray-400 h-screen">
+          <div
+            className="bg-yellow-200 dark:bg-gray-400"
+            style={{ height: "120vh" }}
+          >
             <NavBar />
             {/* <ThemeButton></ThemeButton> */}
             <Routes>
@@ -25,8 +28,8 @@ function App() {
               <Route path="/contact" element={<Contactme />}></Route>
             </Routes>
           </div>
-          <Footer />
-        </main>  
+          <Footer></Footer>
+        </main>
       </BrowserRouter>
       <ToastContainer
         position="top-center"
